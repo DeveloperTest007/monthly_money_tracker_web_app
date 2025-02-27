@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .loading-spinner {
+    @apply inline-block w-5 h-5 border-2 border-gray-200 border-t-blue-600 rounded-full animate-spin;
+  }
+  
+  .page-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100 p-4 sm:p-6;
+  }
+}
+
+@layer utilities {
+  .menu-item {
+    @apply flex items-center px-4 py-3 text-gray-700 rounded-lg transition-all duration-150;
+  }
+
+  .menu-item-active {
+    @apply bg-blue-50 text-blue-600;
+  }
+
+  .menu-item-hover {
+    @apply hover:bg-gray-50;
+  }
+}
